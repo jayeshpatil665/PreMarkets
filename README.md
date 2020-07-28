@@ -1,3 +1,5 @@
+![](app/src/main/res/drawable/app_logo.png)
+
 Play Store Link : 
 https://play.google.com/store/apps/details?id=in.specialsoft.premarkets 
 
