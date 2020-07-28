@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserPannelActivity"
+    android:background="@android:color/white"
+    >
+
+    <TextView
+        android:id="@+id/message_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello user"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/darker_gray"
+        />
+    <TextView
+        android:id="@+id/message_user_tv"
+        android:layout_alignBaseline="@+id/message_tv"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        />
+
+    <TextView
+        android:id="@+id/daily_quote_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_user_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_design"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textColor="@android:color/darker_gray"
+        />
+
+    <ImageView
+        android:layout_below="@+id/daily_quote_tv"
+        android:id="@+id/index_image"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/index_img"
+        />
+    <Button
+        android:id="@+id/btn_premarkets"
+        android:onClick="getToPremarketsPosts"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/index_image"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/buttons"
+        android:paddingLeft="14dp"
+        android:paddingTop="20dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="20dp"
+        android:text="Today's report"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_sector_infocus"
+        android:onClick="tempMessage"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_premarkets"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttons"
+        android:paddingLeft="14dp"
+        android:paddingTop="20dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="20dp"
+        android:text="Stocks in focus"
+        android:textAllCaps="false"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_commingsoon"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_premarkets"
+
+        android:onClick="showAboutInfo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttons"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="15dp"
+        android:text="About us"
+
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+    <ImageButton
+        android:id="@+id/shaire_link_store"
+        android:onClick="rateMe"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_sector_infocus"
+        android:src="@drawable/ic_share"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/buttons"
+
+        android:paddingLeft="14dp"
+        android:paddingTop="20dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="15dp"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:onClick="logOutNow"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shaire_link_store"
+        android:layout_centerVertical="true"
+
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_design"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="Log Out"
+        android:textSize="15sp"
+        android:textColor="@android:color/darker_gray"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logout_btn"
+        android:layout_marginTop="20dp"
+        android:text="Made with ❤ In INDIA"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="12sp"
+        android:textStyle="normal|bold" />
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardElevation="15dp"
+    app:cardCornerRadius="15dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv_post_name"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post Title"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <ImageView
+            android:id="@+id/img_post_img"
+
+            android:layout_below="@+id/tv_post_name"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="2dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_post_id"
+
+            android:layout_below="@+id/img_post_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post ID :"
+            android:textAlignment="textStart"
+            android:textSize="10sp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/tv_post_description"
+
+            android:layout_below="@+id/tv_post_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post description"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StocksInFocusActivity"
+    android:background="@android:color/white"
+    >
+
+
+    <ImageView
+        android:id="@+id/temp_back_img"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/index_market_back"
+        />
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_below="@+id/temp_back_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="* Stocks in Focus now : "
+
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:textColor="@color/colorGreen"
+
+        android:layout_marginTop="5dp"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5sp"
+        />
+
+    <TextView
+        android:id="@+id/text_2"
+        android:layout_below="@+id/text_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="# Next weak stock prediction : "
+
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:textColor="@color/colorOrange"
+
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5sp"
+        />
+    <TextView
+        android:id="@+id/text_3"
+        android:layout_below="@+id/text_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="= Description / Info : "
+
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5sp"
+        />
+
+
+</RelativeLayout>

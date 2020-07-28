@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "951643752398",
+    "firebase_url": "https://premarkets-9f03f.firebaseio.com",
+    "project_id": "premarkets-9f03f",
+    "storage_bucket": "premarkets-9f03f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951643752398:android:375e3692adb328c1fb4d9f",
+        "android_client_info": {
+          "package_name": "in.specialsoft.premarkets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951643752398-8h25p63tkbic5el7rnjtmkqjn80t4s8u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.specialsoft.premarkets",
+            "certificate_hash": "133a5073344aab9e8cfcc57f8941dd6d31bb4113"
+          }
+        },
+        {
+          "client_id": "951643752398-mj10oa4pkpre5asmcd63cbvi8e9minfh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_VDjIBREakiLSmE0QnGa9lq8tSyz6RpQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951643752398-mj10oa4pkpre5asmcd63cbvi8e9minfh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

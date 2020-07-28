@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAddQuoteActivity"
+    android:background="@android:color/white"
+    >
+
+    <EditText
+        android:id="@+id/et_quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="The Daily Quote text here"
+        android:textSize="25sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="45dp"
+
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/background_dark"
+        />
+    <Button
+        android:id="@+id/btn_add_quote"
+        android:layout_below="@+id/et_quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Quote"
+        android:background="@drawable/buttons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:padding="15dp"
+        android:textSize="25sp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:background="@android:color/white"
+    >
+
+    <ImageView
+        android:id="@+id/temp_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/app_logo"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/temp_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp_logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Version 1.0"
+        android:textColor="@android:color/darker_gray"
+
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/text_info_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/get_to_know_what_master_traders_are_thinking_about_markets_before_it_s_opening_at_9_am_every_morning_n_n_hi_there_welcome_to_premarkets_the_best_amp_only_pre_market_report_app_available_on_play_store_we_make_the_daily_reports_from_some_of_the_sharpest_minds_in_stock_market_vijay_kedia_deepak_sahney_deepak_shenoy_pr_sunder_many_more_n_n_please_be_in_touch_many_more_amazing_stuff_on_the_way_to_this_app"
+
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@+id/temp_version"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:padding="5dp"
+        />
+
+    <com.rey.material.widget.ImageButton
+        android:id="@+id/mahesh_id"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/text_info_top"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttons"
+        android:onClick="showmProfile"
+        android:src="@drawable/ic_add_person" />
+
+
+    <com.rey.material.widget.ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/text_info_top"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/buttons"
+        android:onClick="showProfile"
+        android:src="@drawable/ic_add_person" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editor / Developer Profiles"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@+id/text_info_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        />
+</RelativeLayout>

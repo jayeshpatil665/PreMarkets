@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@android:color/white"
+    >
+
+    <ImageView
+        android:id="@+id/login_app_logo"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/app_logo"
+        />
+
+    <TextView
+        android:id="@+id/temp_tag"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_app_logo"
+        android:paddingBottom="10dp"
+        android:text="Daily Pre-Market Report from Master Traders"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/login_user_id"
+            android:background="@drawable/input_design"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temp_tag"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="Enter Email Id"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@android:color/background_dark"
+            />
+    <EditText
+        android:id="@+id/login_user_pass"
+        android:background="@drawable/input_design"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_user_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/background_dark"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_user_pass"
+        android:background="@drawable/buttons"
+        android:padding="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Login"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tv_iam_andmin"
+        android:layout_below="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="I am Admin"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        />
+    <TextView
+        android:id="@+id/forget_password"
+        android:layout_below="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="26dp"
+        />
+</RelativeLayout>
